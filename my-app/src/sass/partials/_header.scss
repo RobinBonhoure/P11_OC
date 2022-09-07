@@ -1,0 +1,24 @@
+.p-header {
+    position: relative;
+    padding: 170px 100px 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width:$screen-md) {
+        justify-content: flex-start;
+        padding: 83px 20px 22px;
+    }
+    img {
+        width: 100%;
+    }
+    &-titre {
+        position: absolute;
+        color: $blanc;
+        @include fluid-text(24px, 48px, 1.4, 991px, 1920px);
+        font-weight: $medium;
+        @media screen and (max-width:$screen-md) {
+            white-space: pre-line;
+            margin-left: 16px;
+        }
+    }
+}

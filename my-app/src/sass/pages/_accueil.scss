@@ -1,0 +1,19 @@
+.accueil {
+    &-grille {
+        background-color: #F6F6F6;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: 25px;
+        row-gap: 50px;
+        column-gap: 60px;
+        padding: 56px 50px;
+        margin-bottom: 43px;
+        @media screen and (max-width:$screen-md) {
+            margin-bottom: 22px;
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+            padding: 0;
+            background-color: unset;
+        }
+    }
+}

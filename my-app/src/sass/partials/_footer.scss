@@ -1,0 +1,19 @@
+.p-footer {
+    position: relative;
+    z-index: 1;
+    background-color: $noir;
+    padding: 66px 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-copyright {
+        @include fluid-text(12px, 24px, 1.4, 991px, 1920px);
+        color: $blanc;
+        font-weight: $medium;
+        margin-top: 32px;
+    }
+    @media screen and (max-width:$screen-sm) {
+        padding: 62px 0;
+    }
+}

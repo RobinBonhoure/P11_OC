@@ -1,0 +1,42 @@
+/*************************************************
+// INCLUDE DES FONTS
+*************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+/*************************************************
+// STYLE DES FONTS
+*************************************************/
+
+$font : 'Montserrat', sans-serif;
+
+$regular : 400;
+
+$medium : 500;
+
+$bold : 700;
+
+.regular {
+    font-weight: $regular;
+}
+
+.medium {
+    font-weight: $medium;
+}
+
+.bold {
+    font-weight: $bold;
+}
+
+%font {
+    font-family: $font;
+    font-weight: normal;
+    font-style: normal;
+}
+
+%font-bold {
+    font-family: $font;
+    font-weight: bold;
+    font-style: normal;
+}

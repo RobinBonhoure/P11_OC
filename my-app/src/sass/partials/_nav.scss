@@ -1,0 +1,37 @@
+.p-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px 0;
+    @media screen and (max-width:$screen-md) {
+        padding: 20px 20px 0;
+    }
+    .logo-nav {
+        width: 210px;
+        height: auto;
+        @media screen and (max-width:$screen-md) {
+            width: 145px;
+        }
+    }
+    &-menu {
+        &_item {
+            display: inline-block;
+            margin-left: 57px;
+            @include fluid-text(12px, 24px, 1.4, 991px, 1920px);
+            color: $primary;
+            font-weight: $medium;
+            @media screen and (max-width:$screen-md) {
+                margin-left: 10px;
+                text-transform: uppercase;
+            }
+        }
+        a.active p {
+            text-decoration: underline;
+        }
+    }
+}

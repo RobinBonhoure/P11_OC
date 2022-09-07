@@ -1,0 +1,28 @@
+.erreur404 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    &-titre {
+        @include fluid-text(96px, 288px, 1.4, 991px, 1920px);
+        color: $primary;
+    }
+    &-subTitle {
+        @include fluid-text(18px, 36px, 1.4, 991px, 1920px);
+        color: $primary;
+        margin-bottom: 17.77vh;
+        text-align: center;
+        @media screen and (min-width: $screen-md) {
+            br {
+                display: none;
+            }
+        }
+    }
+    &-link {
+        @include fluid-text(14px, 18px, 1.4, 991px, 1920px);
+        color: $primary;
+        text-decoration: underline;
+    }
+}
