@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Card(props) {
 
     return (
-        <Link to={`/ficheLogement?id=${props.id}`}>
+        <Link to={`/ficheLogement/${props.id}`}>
             <div className="card">
                 <div className="card-mask"></div>
                 <img src={props.img} alt="" />

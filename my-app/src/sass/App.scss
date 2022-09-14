@@ -218,10 +218,13 @@ textarea {
 // Pages
 @import 'pages/_accueil';
 @import 'pages/_erreur404';
+@import 'pages/_ficheLogement';
 
 // Components
 @import 'components/_card';
 @import 'components/_dropdown';
+@import 'components/_slider';
+@import 'components/_tag';
 
 
 // Utilities

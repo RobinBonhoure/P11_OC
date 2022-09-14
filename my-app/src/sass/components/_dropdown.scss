@@ -3,13 +3,19 @@
     margin: auto;
     width: 71vw;
     &:last-child {
-        margin-bottom: 30px;
+        margin-bottom: 13.9vw;
+        @media screen and (max-width: $screen-md) {
+            margin-bottom: 168px;
+        }
     }
     @media screen and (max-width: $screen-md) {
         width: calc(100% - 40px);
     }
     & + & {
         margin-top: 30px;
+        @media screen and (max-width: $screen-md) {
+            margin-top: 20px;
+        }
     }
     &-header {
         background-color: $primary;
@@ -17,7 +23,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 5px 32px 5px 18px;
+        padding: 8px 32px 8px 18px;
         @media screen and (max-width: $screen-md) {
             padding: 5px 7px 5px 12px;
         }
@@ -62,6 +68,21 @@
             @media screen and (max-width: $screen-md) {
                 padding: 20px 7px 52px 11px;
             }
+        }
+    }
+    &-sm {
+        height: 100%;
+        width: 40vw;
+        margin: 0;
+        display: inline-block;
+        &.active .dropdown-content {
+            height: initial;
+        }
+        &:last-child {
+            margin: 0;
+        }
+        @media screen and (max-width:$screen-sm) {
+            width: 100%;          
         }
     }
 }

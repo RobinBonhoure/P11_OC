@@ -3,11 +3,8 @@ import Header from "../layouts/header";
 import Nav from "../layouts/nav";
 import headerImg from "../img/header.png";
 import headerImgMobile from "../img/header-mobile.png";
-import { data } from "../datastore/data.js"
+import { data } from "../datastore/data.js";
 import Card from "../components/card";
-
-// JSON
-
 
 // VARIABLES
 var page_title = "Chez vous,\n partout et ailleurs";

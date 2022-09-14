@@ -1,0 +1,86 @@
+.ficheLogement {
+    padding: 128px 100px;
+    color: $primary;
+    @media screen and (max-width:$screen-md) {
+        padding: 94px 20px;
+    }
+    &-title {
+        @include fluid-text(18px, 36px, 1.4, 991px, 1920px);
+        font-weight: $medium;
+    }
+    &-subtitle {
+        @include fluid-text(14px, 18px, 1.4, 991px, 1920px);
+        font-weight: $medium;
+        margin-bottom: 20px;
+    }
+    &-tags {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 10px;
+        padding-right: 20px;
+    }
+    &-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @media screen and (max-width:$screen-sm) {
+            flex-direction: column;            
+        }
+        &_right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            row-gap: 10px;
+            @media screen and (max-width:$screen-sm) {
+                flex-direction: row-reverse;     
+                justify-content: space-between;     
+                width: 100%;
+                margin-top: 15px;
+                align-items: center;
+            }
+            &_top {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 100vmax;
+                    object-fit: cover;
+                }
+                p {
+                    text-align: right;
+                    width: min-intrinsic;
+                    width: -webkit-min-content;
+                    width: -moz-min-content;
+                    width: min-content; 
+                    color: $primary;
+                    @include fluid-text(12px, 18px, 1.4, 991px, 1920px);
+                    font-weight: $medium;
+                }
+            }
+        }
+        &_rate {
+            display: flex;
+            column-gap: 10px;
+            @media screen and (max-width:$screen-sm) {
+                column-gap: 5px;
+            }
+            svg {
+                width: 1.5625vw;
+                min-width: 15px;
+            }
+        }
+    }
+    &-dropdown {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 20px;
+        @media screen and (max-width:$screen-sm) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.tag {
+    background-color: $primary;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 115px;
+    min-height: 25px;
+    border-radius: 10px;
+    padding: 0 10px;
+    @media screen and (max-width:$screen-sm) {
+        min-width: 84px;
+        min-height: 18px;   
+        border-radius: 5px;
+    }
+    p {
+        color: $blanc;
+        font-size: 14px;
+        @media screen and (max-width:$screen-sm) {
+            font-size: 10px;
+        }
+    }
+}
