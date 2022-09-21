@@ -5,21 +5,24 @@ import Tag from "../components/tag";
 import DropdownSm from "../components/dropdownSm";
 
 import { data } from "../datastore/data.js";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const starArray = [...Array(5).keys()].map(i => i + 1);
 
-function FicheLogement(props) {
+function FicheLogement() {
 
   const { id } = useParams();
   const [logement, setLogement] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const logementFound = data.find(logement => logement.id === id);
     if (logementFound) {
       setLogement(logementFound);
+    } else {
+      navigate("/erreur404");
     }
-  }, [id]);
+  },[id, navigate]);
   
   return (
     <div className="ficheLogement">
